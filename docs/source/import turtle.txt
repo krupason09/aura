@@ -1,0 +1,76 @@
+import turtle
+import cv2
+import numpy as np
+import os
+
+def draw_styled_archer(image_path, style="laser", detail=5):
+    if not os.path.exists(image_path):
+        print("Path error!")
+        return
+
+    # 1. Load and Prep
+    img_array = np.fromfile(image_path, np.uint8)
+    img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    
+    h, w = img.shape[:2]
+    scale = 500 / w
+    img_small = cv2.resize(img, (int(w * scale), int(h * scale)))
+    new_h, new_w = img_small.shape[:2]
+
+    # 2. Setup Screen
+    screen = turtle.Screen()
+    screen.bgcolor("black" if style == "laser" else "white")
+    screen.setup(new_w + 50, new_h + 50)
+    screen.colormode(255)
+    
+    # SPEED CONTROL: 
+    # (0, 0) is instant. (10, 0) shows some movement. (1, 0) is slow.
+    screen.tracer(50, 0) 
+    
+    t = turtle.Turtle()
+    t.speed(0)
+    t.hideturtle()
+
+    # 3. Style Drawing Logic
+    for y in range(0, new_h, detail):
+        for x in range(0, new_w, detail):
+            r, g, b = img_small[y, x]
+            if r < 15 and g < 15 and b < 15: continue
+
+            t.penup()
+            tx, ty = x - (new_w / 2), (new_h / 2) - y
+            t.goto(tx, ty)
+            t.pencolor(r, g, b)
+            t.pendown()
+
+            if style == "Pointillism":
+                # Laser: Long, thin, glowing lines
+                t.pensize(1)
+                t.setheading(np.random.randint(0, 360))
+                t.forward(detail * 2)
+                
+            elif style == "oil":
+                # Oil Paint: Thick, messy dabs
+                t.pensize(detail)
+                t.setheading(45)
+                t.forward(2)
+                
+            elif style == "geometric":
+                # The "Flower/Petal" look from your video
+                t.pensize(1)
+                t.setheading(x + y)
+                for _ in range(2):
+                    t.circle(detail, 90)
+                    t.circle(detail//2, 90)
+
+    screen.update()
+    print(f"Finished {style} style!")
+    turtle.done()
+
+# --- SETTINGS ---
+path = r'C:\Users\chikk\Pictures\victor brother\IMG-20200611-WA0031.jpg'
+
+# Styles available: "laser", "oil", "geometric"
+# Detail: 2 (high detail/slow) to 8 (low detail/fast)
+draw_styled_archer(path, style="Pointillism", detail=5)
