@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=PyGPT
-Exec=pygpt
+Name=Zenith Agent
+Exec=Zenith Agent
 Icon=io.github.krupason09.Zenith Agent
 Categories=Utility;
