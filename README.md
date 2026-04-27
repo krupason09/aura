@@ -1,17 +1,11 @@
 # PyGPT - Desktop AI Assistant
 
-[![pygpt](https://snapcraft.io/pygpt/badge.svg)](https://snapcraft.io/pygpt)
-
-Release: **2.7.12** | build: **2026-02-06** | Python: **>=3.10, <3.14**
-
 > Official website: https://pygpt.net | Documentation: https://pygpt.readthedocs.io
 > 
 > Discord: https://pygpt.net/discord | Snap: https://snapcraft.io/pygpt | PyPi: https://pypi.org/project/pygpt-net
 > 
 > Compiled version for Linux (`zip`) and Windows 10/11 (`msi`) 64-bit: https://pygpt.net/#download
 > 
-> ❤️ Donate: https://www.buymeacoffee.com/szczyglis | https://github.com/sponsors/szczyglis-dev
-
 ## Overview
 
 **PyGPT** is **all-in-one** Desktop AI Assistant that provides direct interaction with OpenAI language models, including `GPT-5`, `GPT-4`, `o1`, `o3` and more, through the `OpenAI API`. By utilizing other SDKs and `LlamaIndex`, the application also supports alternative LLMs, like those available on `HuggingFace`, locally available models via `Ollama` (like `gpt-oss`, `Llama 3`,`Mistral`, `DeepSeek V3/R1` or `Bielik`), and other models like `Google Gemini`, `Anthropic Claude`, `Perplexity / Sonar`, and `xAI Grok`.
