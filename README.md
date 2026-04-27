@@ -1,4 +1,4 @@
-# PyGPT - Desktop AI Assistant
+# Zenith Agent - Desktop AI Assistant
 
 > Official website: https://pygpt.net | Documentation: https://pygpt.readthedocs.io
 > 
