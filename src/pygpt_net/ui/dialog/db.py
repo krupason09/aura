@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# ================================================== #
-# This file is a part of PYGPT package               #
-# Website: https://pygpt.net                         #
-# GitHub:  https://github.com/szczyglis-dev/py-gpt   #
-# MIT License                                        #
-# Created By  : Marcin Szczygliński                  #
-# Updated Date: 2026.01.22 17:00:00                  #
-# ================================================== #
-
 from PySide6.QtCore import Qt, QTimer, QSignalBlocker, QObject, QEvent
 from PySide6.QtGui import QAction, QIcon, QIntValidator
 from PySide6.QtWidgets import QGridLayout, QScrollArea, QSplitter, QComboBox, QLineEdit, QPushButton, \
