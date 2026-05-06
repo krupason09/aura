@@ -1,6 +1,8 @@
 #!/bin/bash
 
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+
+
 INI_FILES_DIR="$SCRIPT_DIR/../src/pygpt_net/data/locale"
 
 sort_ini_file_script='
