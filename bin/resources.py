@@ -24,6 +24,8 @@ def generate_resource_file(source_dirs, output_file, file_extension, resource_pr
         file.write(qrc_content)
     print(f"Generated: {output_file}")
 
+
+
 if __name__ == '__main__':
     # icons
     icons_source_dir = os.path.join(os.path.dirname(__file__), '..', 'src', 'pygpt_net', 'data', 'icons')
