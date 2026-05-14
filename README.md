@@ -3729,57 +3729,10 @@ may consume additional tokens that are not displayed in the main window.
 - Added a zoom menu to textarea and web widgets.
 - Added the ability to close tabs with a middle mouse button click.
 
-# Credits and links
-
-**Official website:** <https://pygpt.net>
-
-**Documentation:** <https://pygpt.readthedocs.io>
-
-**Support and donate:** <https://pygpt.net/#donate>
-
-**GitHub:** <https://github.com/szczyglis-dev/py-gpt>
-
-**Discord:** <https://pygpt.net/discord>
-
-**Snap Store:** <https://snapcraft.io/pygpt>
-
-**Microsoft Store:** <https://apps.microsoft.com/detail/XP99R4MX3X65VQ>
-
-**PyPI:** <https://pypi.org/project/pygpt-net>
-
-**Author:** Marcin Szczygliński (Poland, EU)
-
-**Contact:** <info@pygpt.net>
-
 **License:** MIT License
 
-# Special thanks
-
-GitHub's community:
-
-- [@BillionShields](https://github.com/BillionShields)
-
-- [@gfsysa](https://github.com/gfsysa)
-
-- [@glinkot](https://github.com/glinkot)
-
-- [@kaneda2004](https://github.com/kaneda2004)
-
-- [@KingOfTheCastle](https://github.com/KingOfTheCastle)
-
-- [@linnflux](https://github.com/linnflux)
-
-- [@lukasz-pekala](https://github.com/lukasz-pekala)
-
-- [@moritz-t-w](https://github.com/moritz-t-w)
-
-- [@oleksii-honchar](https://github.com/oleksii-honchar)
-
-- [@yf007](https://github.com/yf007)
 
 ## Third-party libraries
-
-Full list of external libraries used in this project is located in the [requirements.txt](https://github.com/szczyglis-dev/py-gpt/blob/master/requirements.txt) file in the main folder of the repository.
 
 All used SVG icons are from `Material Design Icons` provided by Google:
 
