@@ -14,15 +14,6 @@ For Windows 10/11, you can install **PyGPT** directly from Microsoft Store:
 
 Link to MS Store: https://apps.microsoft.com/detail/XP99R4MX3X65VQ
 
-## AppImage (Linux)
-
-You can download the latest **PyGPT** `AppImage` for Linux from the release page:
-
-Releases: https://github.com/szczyglis-dev/py-gpt/releases
-
-To manage future updates use:
-
-```appimageupdatetool ./PyGPT-X.X.X-x86_64.AppImage```
 
 ## Snap Store (Linux)
 
